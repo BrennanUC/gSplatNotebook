@@ -1,0 +1,10 @@
+# Local video/SfM pipeline and notebook environment for Ubuntu/WSL.
+numpy>=2,<3
+opencv-python-headless
+matplotlib
+tqdm
+imageio[ffmpeg]
+pycolmap>=3.10
+ipykernel
+ipywidgets
+jupyterlab

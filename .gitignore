@@ -1,0 +1,16 @@
+
+# Local Python and Jupyter environments
+.venv/
+.venv-rocm/
+.jupyter/
+.torch-extensions/
+__pycache__/
+.ipynb_checkpoints/
+
+# Generated scenes, external source checkouts, and local media
+gaussian_splat/
+gsplat/
+*.mp4
+
+# Machine-specific installer packages
+*.deb
