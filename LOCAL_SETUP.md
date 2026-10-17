@@ -6,7 +6,8 @@ or generated locally; they are not included in Git.
 
 ## Prerequisites
 
-- Ubuntu/WSL2 with Python 3.12, Git, curl, and internet access.
+- Ubuntu/WSL2 with Python 3.12, Git, curl, and internet access. AMD training
+  also needs a C++ compiler (`sudo apt install build-essential`).
 - For AMD training: an RX 7900 XT (`gfx1100`), a compatible Windows WSL driver,
   and the ROCm 7.2 development tools at `/opt/rocm`, including `hipcc`.
   Follow [AMD's WSL installation instructions](https://rocm.docs.amd.com/projects/radeon-ryzen/en/docs-7.2/docs/install/installrad/wsl/install-radeon.html)
@@ -38,6 +39,8 @@ After installing the ROCm system prerequisites:
 bash setup-rocm.sh
 bash run-rocm.sh
 ```
+
+The installer is [setup-rocm.sh](setup-rocm.sh) in the project root.
 
 Select **Gaussian Splat ROCm (RX 7900 XT)**, then run the notebook cells in order.
 The installer creates `.venv-rocm`, installs AMD's matching PyTorch 2.9.1 and
